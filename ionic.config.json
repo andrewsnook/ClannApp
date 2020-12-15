@@ -1,0 +1,7 @@
+{
+  "name": "ClannApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
