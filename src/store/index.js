@@ -5,7 +5,11 @@ const store = createStore({
         return {
             clann:[
             {
-                id: 'c1', title: 'Anabelle', dob: '26-Aug-2005', hobbies:['colouring','reading','arts and crafts'], image:'https://image.flaticon.com/icons/png/512/146/146005.png'
+                id: 'c1', 
+                title: 'Anabelle',
+                dob: '26-Aug-2005', 
+                hobbies:['colouring','reading','arts and crafts'], 
+                image:'https://image.flaticon.com/icons/png/512/146/146005.png'
             },
             {
                 id: 'c2', title: 'Lucy', dob: '06-Dec-2008',hobbies:['dolls','makeup','hairdressing'], image:'https://image.flaticon.com/icons/png/512/186/186037.png'

@@ -4,9 +4,8 @@
             <ion-toolbar>
                 <ion-buttons>
                     <slot name="start">
-                <ion-back-button :default-href='defaultBackLink'></ion-back-button>
+                        <ion-back-button :default-href='defaultBackLink'></ion-back-button>
                     </slot>
-
                 </ion-buttons>
             <ion-title>{{title}}</ion-title>
             </ion-toolbar>
