@@ -1,10 +1,10 @@
 <template>
-<ion-item :router-link="`/clann/person/${person.id}`" :key="person.id">
-                <ion-thumbnail slot="start"><ion-img :src="person.image"> </ion-img></ion-thumbnail>
-                <ion-label>
-                {{person.title}}
-                </ion-label>
-                </ion-item>
+    <ion-item :router-link="`/clann/person/${person.id}`" :key="person.id">
+        <ion-thumbnail slot="start"><ion-img :src="person.image"> </ion-img></ion-thumbnail>
+        <ion-label>
+            {{person.name}}
+        </ion-label>
+    </ion-item>
 </template>
 
 <script>

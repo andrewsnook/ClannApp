@@ -6,16 +6,16 @@ const store = createStore({
             clann:[
             {
                 id: 'c1', 
-                title: 'Anabelle',
+                name: 'Anabelle Mary Snook',
                 dob: '26-Aug-2005', 
                 hobbies:['colouring','reading','arts and crafts'], 
                 image:'https://image.flaticon.com/icons/png/512/146/146005.png'
             },
             {
-                id: 'c2', title: 'Lucy', dob: '06-Dec-2008',hobbies:['dolls','makeup','hairdressing'], image:'https://image.flaticon.com/icons/png/512/186/186037.png'
+                id: 'c2', name: 'Lucy Marie Snook', dob: '06-Dec-2008',hobbies:['dolls','makeup','hairdressing'], image:'https://image.flaticon.com/icons/png/512/186/186037.png'
             },
             {
-                id: 'c3', title: 'Vicky', dob: '08-Dec-1896',hobbies:['gin','netflix','naps'], image:'https://image.flaticon.com/icons/svg/163/163846.svg'
+                id: 'c3', name: 'Vicky Marie Snook', dob: '08-Dec-1896',hobbies:['gin','netflix','naps'], image:'https://image.flaticon.com/icons/svg/163/163846.svg'
             },
             ]
         }

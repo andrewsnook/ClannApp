@@ -1,7 +1,7 @@
 <template>
-  <ion-list >
-                <clann-list-item v-for="person in clann" :key="person.id" :person="person"></clann-list-item>
-            </ion-list>
+    <ion-list >
+        <clann-list-item v-for="person in clann" :key="person.id" :person="person"></clann-list-item>
+    </ion-list>
 </template>
 
 <script>
