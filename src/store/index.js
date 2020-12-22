@@ -29,7 +29,6 @@ const store = createStore({
                 return state.clann.find(clann => clann.id === personId)
             }
         }
-
     }
 })
 

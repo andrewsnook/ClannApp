@@ -7,7 +7,7 @@
                         <ion-back-button :default-href='defaultBackLink'></ion-back-button>
                     </slot>
                 </ion-buttons>
-            <ion-title>Clann</ion-title>
+            <ion-title></ion-title>
             </ion-toolbar>
         </ion-header>
         <ion-content>

@@ -14,6 +14,10 @@ const routes = [
   {
     path: "/clann/person/:id",
     component: () => import('../pages/PersonDetails.vue')
+  },
+  {
+    path: "/IconsTestPage",
+    component: () => import('../pages/IconsTestPage.vue')
   }
 ];
 
