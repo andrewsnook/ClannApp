@@ -16,15 +16,13 @@
     </IonPage>
 </template>
 
-
 <script>
 import {IonPage, IonHeader, IonTitle, IonToolbar, IonContent, IonBackButton, IonButtons} from '@ionic/vue'
 export default {
     props:['title','defaultBackLink'],
     components:{
     IonPage, IonHeader, IonTitle, IonContent, IonToolbar,IonBackButton, IonButtons
-    }
-    
+    }    
 }
 </script>
 

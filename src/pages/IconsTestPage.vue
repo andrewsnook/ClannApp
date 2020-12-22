@@ -1,148 +1,92 @@
 <template>
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Header</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
 
-  <ion-content>
-    <!-- fab placed to the top end -->
-    <ion-fab vertical="top" horizontal="end" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+  <!-- List of Input Items -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
 
-    <!-- fab placed to the bottom end -->
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="arrow-forward-circle"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+  <!-- List of Sliding Items -->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option @click="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-    <!-- fab placed to the top start -->
-    <ion-fab vertical="top" horizontal="start" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="arrow-back-circle"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-
-    <!-- fab placed to the bottom start -->
-    <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="arrow-up-circle"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-
-    <!-- fab placed to the (vertical) center and start -->
-    <ion-fab vertical="center" horizontal="start" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="share"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-
-    <!-- fab placed to the (vertical) center and end -->
-    <ion-fab vertical="center" horizontal="end" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-
-    <!-- fab placed to the top and end and on the top edge of the content overlapping header -->
-    <ion-fab vertical="top" horizontal="end" edge slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="person"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-
-    <!-- fab placed to the bottom and start and on the bottom edge of the content overlapping footer with a list to the right -->
-    <ion-fab vertical="bottom" horizontal="start" edge slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="settings"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-list side="end">
-        <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
-      </ion-fab-list>
-    </ion-fab>
-
-    <!-- fab placed in the center of the content with a list on each side -->
-    <ion-fab vertical="center" horizontal="center" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="share"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-list side="top">
-        <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
-      </ion-fab-list>
-      <ion-fab-list side="bottom">
-        <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
-      </ion-fab-list>
-      <ion-fab-list side="start">
-        <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
-      </ion-fab-list>
-      <ion-fab-list side="end">
-        <ion-fab-button><ion-icon :icon="logo-twitter"></ion-icon></ion-fab-button>
-      </ion-fab-list>
-    </ion-fab>
-  </ion-content>
-
-  <ion-footer>
-    <ion-toolbar>
-      <ion-title>Footer</ion-title>
-    </ion-toolbar>
-  </ion-footer>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option @click="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </template>
 
 <script>
 import { 
-  IonContent, 
-  IonFab, 
-  IonFabButton, 
-  IonFabList, 
-  IonFooter, 
-  IonHeader, 
-  IonIcon, 
-  IonTitle, 
-  IonToolbar 
+  IonCheckbox, 
+  IonInput, 
+  IonItem, 
+  IonItemOption, 
+  IonItemOptions, 
+  IonItemSliding, 
+  IonList, 
+  IonLabel, 
+  IonRadio, 
+  IonToggle 
 } from '@ionic/vue';
-import { 
-  add, 
-  arrowBackCircle,
-  arrowForwardCircle, 
-  logoFacebook, 
-  logoInstagram, 
-  logoTwitter, 
-  logoVimeo, 
-  person, 
-  settings, 
-  share
-} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   components: { 
-    IonContent, 
-    IonFab, 
-    IonFabButton, 
-    IonFabList, 
-    IonFooter, 
-    IonHeader, 
-    IonIcon, 
-    IonTitle, 
-    IonToolbar
-  },
-  setup() {
-    return {
-      add, 
-      arrowBackCircle,
-      arrowForwardCircle, 
-      logoFacebook, 
-      logoInstagram, 
-      logoTwitter, 
-      logoVimeo, 
-      person, 
-      settings, 
-      share
-    }
+    IonCheckbox, 
+    IonInput, 
+    IonItem, 
+    IonItemOption, 
+    IonItemOptions, 
+    IonItemSliding, 
+    IonList, 
+    IonLabel, 
+    IonRadio, 
+    IonToggle 
   }
 });
 </script>
